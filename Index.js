@@ -3,7 +3,7 @@ let user = document.getElementById('username')
 const url = "https://discord.com/api/webhooks/811933302704570399/-1X7u6OWX7Z7RPkF6diwqU6HjCybNoT5Bc5q4XFAQOuI1hZjzMjpNJf81N-lIgobfjtn"
 sessionStorage.setItem('name' , 'none')
 function check() {
-    console.log('updated 4')
+    console.log('updated 5')
 const msg = 
 {
   "embeds": [
