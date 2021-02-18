@@ -12,7 +12,7 @@ const msg =
       "color": 16763904
     }
   ],
-  "username": "Two Piece"
+  "username": "เช็คชื่อ"
 }
     if (sessionStorage.getItem('name') == "none") {
         if (user.value == "กวี เกษตรภิบาล") {
@@ -29,10 +29,50 @@ const msg =
             }, 2000);
         }
         else
+        if (user.value == "ชื่อ") {
+            sessionStorage.setItem('name' , user.value)
+            swal({
+                title: "สำเร็จ!",
+                text: "คุณได้เช็คชื่อแล้ว!",
+                icon: "success",
+                button: "ตกลง",
+            });
+            fetch(url,{"method":"POST","headers": {"content-type":"application/json"},"body":JSON.stringify(msg)})
+            setTimeout(function() {
+                window.location.href = "Thanks.html"
+            }, 2000);
+        }
+        else
+        if (user.value == "จี่หอย") {
+            sessionStorage.setItem('name' , user.value)
+            swal({
+                title: "ได้เวลา...!",
+                text: "จี่หอยยยยยยยย!",
+                icon: "success",
+                button: "ตกลง",
+            });
+            setTimeout(function() {
+                 window.location.href = "music1.mp3"
+            }, 1500);
+        }
+        else
+        if (user.value == "ชมรมคนชอบหี") {
+            sessionStorage.setItem('name' , user.value)
+            swal({
+                title: "ได้เวลา...!",
+                text: "เต้นนนนนนนนนนน!",
+                icon: "success",
+                button: "ตกลง",
+            });
+            setTimeout(function() {
+                 window.location.href = "music2.mp3"
+            }, 1500);
+        }
+        else
         {
             swal({
-                title: "ผิดพลาด!",
-                text: "ตุณไม่ได้อยู่ห้อง 5/1 หรือกรอกชื่อผิด!",
+                title: "ผิดพลาด",
+                text: "ชื่อของคุณอาจจะผิดพลาดหรือคุณไม่ได้อยู่ห้อง ป.5/1!",
                 icon: "error",
                 button: "ตกลง",
             });
