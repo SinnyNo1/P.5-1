@@ -79,7 +79,7 @@ const msg =
                 button: "ตกลง",
             });
             setTimeout(function() {
-                 window.location.href = "music2.mp3"
+                 window.location.href = "music3.mp3"
             }, 1500);
         }
         else
