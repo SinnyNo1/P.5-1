@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@600&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(49, 49, 49);
+    padding: 0;
+    font-family: 'Mitr', sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.header {
+    transition: ease-in-out 0.2s;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 2cm;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6cm;
+    background-color: rgb(255, 68, 68);
+    color: white;
+}
+
+.header:hover {
+    transition: ease-in-out 0.3s;
+    font-size: 0.7cm;
+    cursor: default;
+}
+
+.text {
+    transition: ease-in-out 0.1s;
+    font-family: 'Mitr', sans-serif;
+    color: rgb(44, 44, 44);
+    font-size: 1.2cm;
+    border-radius: 50px;
+    outline: none;
+    width: 17cm;
+    height: 1.75cm;
+    border-color: rgb(255, 74, 74);
+    box-shadow: 0 0 15px 0  rgb(255, 74, 74);
+}
+
+.text:focus {
+    transition: ease-in-out 0.3s;
+    border-color: rgb(255, 74, 74);
+    box-shadow: 0 0 50px 0  rgb(255, 74, 74);
+}
+
+.button {
+    background-color: rgb(255, 74, 74);
+    transition: ease-in-out 0.3s;
+    font-family: 'Mitr', sans-serif;
+    color: rgb(44, 44, 44);
+    font-size: 1.2cm;
+    border-radius: 50px;
+    border-color: transparent;
+    outline: none;
+    width: 7.5cm;
+    height: 1.75cm;
+    box-shadow: 0 0 15px 0  rgb(255, 74, 74);
+}
+
+.button:hover {
+    background-color: rgb(104, 255, 74);
+    transition: ease-in-out 0.3s;
+    border-color: rgb(104, 255, 74);
+    box-shadow: 0 0 15px 0  rgb(104, 255, 74);
+}
