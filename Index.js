@@ -70,6 +70,19 @@ const msg =
             }, 1500);
         }
         else
+        if (user.value == "ชมรมถ่ายรูป") {
+            sessionStorage.setItem('name' , user.value)
+            swal({
+                title: "ได้เวลา...!",
+                text: "ร้องเพลงงงง!",
+                icon: "success",
+                button: "ตกลง",
+            });
+            setTimeout(function() {
+                 window.location.href = "music2.mp3"
+            }, 1500);
+        }
+        else
         {
             swal({
                 title: "ผิดพลาด",
